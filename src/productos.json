@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "descuento": 500,
+        "stock": 10,
+        "nombre": "Gorro rojo",
+        "precio": 3500,
+        "categoria": "Gorros",
+        "imagen": "gorros-con-caida.jpg"
+    },
+    {
+        "id": 2,
+        "descuento": 500,
+        "stock": 7,
+        "nombre": "Gorro amarillo",
+        "precio": 3500,
+        "categoria": "Gorros",
+        "imagen": "gorros-con-caida.jpg"
+    },
+    {
+        "id": 3,
+        "descuento": 500,
+        "stock": 5,
+        "nombre": "Gorro negro",
+        "precio": 3500,
+        "categoria": "Gorros",
+        "imagen": "gorros.jpg"
+    },
+    {
+        "id": 4,
+        "descuento": 800,
+        "stock": 6,
+        "nombre": "Almohadon amarrillo",
+        "precio": 8500,
+        "categoria": "Almohadones",
+        "imagen": "almohadon-amarillo.jpg"
+    },
+    {
+        "id": 5,
+        "descuento": 0,
+        "stock": 3,
+        "nombre": "Almohadon espiga",
+        "precio": 9500,
+        "categoria": "Almohadones",
+        "imagen": "almohadon-espiga.jpg"
+    },
+    {
+        "id": 6,
+        "descuento": 0,
+        "stock": 18,
+        "nombre": "Almohadon estrella",
+        "precio": 7000,
+        "categoria": "Almohadones",
+        "imagen": "almohadon-estrella.jpg"
+    },
+    {
+        "id": 7,
+        "descuento": 500,
+        "stock": 2,
+        "nombre": "Almohadon flor",
+        "precio": 9000,
+        "categoria": "Almohadones",
+        "imagen": "almohadon-flor.jpg"
+    },
+    {
+        "id": 8,
+        "descuento": 1500,
+        "stock": 4,
+        "nombre": "Almohadon girasol",
+        "precio": 10500,
+        "categoria": "Almohadones",
+        "imagen": "almohadon-girasol.jpg"
+    },
+    {
+        "id": 9,
+        "descuento": 0,
+        "stock": 1,
+        "nombre": "Cartera rodonda",
+        "precio": 11000,
+        "categoria": "Prendas",
+        "imagen": "cartera-rodonda.jpg"
+    },
+    {
+        "id": 10,
+        "descuento": 300,
+        "stock": 5,
+        "nombre": "Top corto",
+        "precio": 5500,
+        "categoria": "Prendas",
+        "imagen": "top-corto.jpg"
+    },
+    {
+        "id": 11,
+        "descuento": 500,
+        "stock": 3,
+        "nombre": "Top Marilin",
+        "precio": 7500,
+        "categoria": "Prendas",
+        "imagen": "top-flor-marilin.jpg"
+    },
+    {
+        "id": 12,
+        "descuento": 700,
+        "stock": 7,
+        "nombre": "Tapete Rodondo",
+        "precio": 6500,
+        "categoria": "Caminos",
+        "imagen": "tapete-mesa-rodondo.jpg"
+    }
+]
