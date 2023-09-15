@@ -21,7 +21,6 @@ export default function ItemCount() {
             <button onClick={onDecrease}>-</button>
             <span>{count}</span>
             <button onClick={onIncrease}>+</button>
-            <button onClick={count}>Agregar a la compra</button>
         </div>
     )
 }

@@ -4,9 +4,25 @@
 
 body {
   margin: 0;
+  width: 100%;
+  height: 100%;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+  
 }
 
 .precio-descuento {
   color: rgb(184, 22, 22);
 }
 
+button{
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #9e6595;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
