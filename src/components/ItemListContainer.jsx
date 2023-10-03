@@ -1,39 +1,57 @@
 import ItemList from './ItemList';
 import './ItemListContainer.css';
-import { Link } from 'react-router-dom';
-import productos from "../productos.json";
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { collection, getDocs, getFirestore, query, where } from "firebase/firestore";
+import { Hearts } from "react-loader-spinner";
+import { ThemeContext } from './ThemeContext';
 
-const mockAPI = () => {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(productos);
-        }, 2000);
-    });
-}
-export default function ItemListContainer({ greeting }) {
-    const [productos, setProductos] = useState([]);
+
+export default function ItemListContainer({ greeting, children }) {
+    const [productos, setProductos] = useState();
     const { id } = useParams();
+    const { isDarkMode } = useContext(ThemeContext);
 
     useEffect(() => {
-        if(!id) {
-            mockAPI().then((data) => setProductos(data));
-        }else{
-            mockAPI().then((data) => {
-                const productoFiltrado = data.filter(item => item.categoria === id)
-                setProductos(productoFiltrado)
-            });  
-        }
-    
+        const db = getFirestore();
+
+        const productosRef = id ? query(collection(db, "productos"), where("categoria", "==", id)) : collection(db, "productos");
+        getDocs(productosRef).then((snapshot) => {
+            if(snapshot.size !== 0) {
+                setProductos(snapshot.docs.map((doc) => ({id: doc.id, ...doc.data()})))
+            };
+        })
     }, [id]);
 
-    return (
+        if(!productos) return (<div className="hearts"><Hearts height="180" width="180" color="#9e6595" ariaLabel="hearts-loading" wrapperStyle={{}} wrapperClass="null" visible={true}/></div>);
+    
+        return (
         
-        <div className= "item-list-container">
+        <div className= "item-list-container" style={
+            isDarkMode ? {backgroundColor:"rgb(58, 55, 55)"} : {backgroundColor:"whitesmoke"} 
+        }>
+            {children}
                 <h1>{greeting}</h1>
                 <ItemList productos={productos}/>
         </div>
 );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -6,7 +6,8 @@
         "nombre": "Gorro rojo",
         "precio": 3500,
         "categoria": "Gorros",
-        "imagen": "gorros-con-caida.jpg"
+        "imagen": "gorros-con-caida.jpg",
+        "descripcion": "Esta es la descripcion de lalalalallalala"
     },
     {
         "id": 2,
@@ -15,7 +16,8 @@
         "nombre": "Gorro amarillo",
         "precio": 3500,
         "categoria": "Gorros",
-        "imagen": "gorros-con-caida.jpg"
+        "imagen": "gorros-con-caida.jpg",
+        "descripcion": "Esta es la descripcion de lalalalallalala"
     },
     {
         "id": 3,
@@ -24,7 +26,8 @@
         "nombre": "Gorro negro",
         "precio": 3500,
         "categoria": "Gorros",
-        "imagen": "gorros.jpg"
+        "imagen": "gorros.jpg",
+        "descripcion": "Esta es la descripcion de lalalalallalala"
     },
     {
         "id": 4,
@@ -33,7 +36,8 @@
         "nombre": "Almohadon amarrillo",
         "precio": 8500,
         "categoria": "Almohadones",
-        "imagen": "almohadon-amarillo.jpg"
+        "imagen": "almohadon-amarillo.jpg",
+        "descripcion": "Esta es la descripcion de lalalalallalala"
     },
     {
         "id": 5,
@@ -42,7 +46,8 @@
         "nombre": "Almohadon espiga",
         "precio": 9500,
         "categoria": "Almohadones",
-        "imagen": "almohadon-espiga.jpg"
+        "imagen": "almohadon-espiga.jpg",
+        "descripcion": "Esta es la descripcion de lalalalallalala"
     },
     {
         "id": 6,
@@ -51,7 +56,8 @@
         "nombre": "Almohadon estrella",
         "precio": 7000,
         "categoria": "Almohadones",
-        "imagen": "almohadon-estrella.jpg"
+        "imagen": "almohadon-estrella.jpg",
+        "descripcion": "Esta es la descripcion de lalalalallalala"
     },
     {
         "id": 7,
@@ -60,7 +66,8 @@
         "nombre": "Almohadon flor",
         "precio": 9000,
         "categoria": "Almohadones",
-        "imagen": "almohadon-flor.jpg"
+        "imagen": "almohadon-flor.jpg",
+        "descripcion": "Esta es la descripcion de lalalalallalala"
     },
     {
         "id": 8,
@@ -69,7 +76,8 @@
         "nombre": "Almohadon girasol",
         "precio": 10500,
         "categoria": "Almohadones",
-        "imagen": "almohadon-girasol.jpg"
+        "imagen": "almohadon-girasol.jpg",
+        "descripcion": "Esta es la descripcion de lalalalallalala"
     },
     {
         "id": 9,
@@ -78,7 +86,8 @@
         "nombre": "Cartera rodonda",
         "precio": 11000,
         "categoria": "Prendas",
-        "imagen": "cartera-rodonda.jpg"
+        "imagen": "cartera-rodonda.jpg",
+        "descripcion": "Esta es la descripcion de lalalalallalala"
     },
     {
         "id": 10,
@@ -87,7 +96,8 @@
         "nombre": "Top corto",
         "precio": 5500,
         "categoria": "Prendas",
-        "imagen": "top-corto.jpg"
+        "imagen": "top-corto.jpg",
+        "descripcion": "Esta es la descripcion de lalalalallalala"
     },
     {
         "id": 11,
@@ -96,7 +106,8 @@
         "nombre": "Top Marilin",
         "precio": 7500,
         "categoria": "Prendas",
-        "imagen": "top-flor-marilin.jpg"
+        "imagen": "top-flor-marilin.jpg",
+        "descripcion": "Esta es la descripcion de lalalalallalala"
     },
     {
         "id": 12,
@@ -105,6 +116,7 @@
         "nombre": "Tapete Rodondo",
         "precio": 6500,
         "categoria": "Caminos",
-        "imagen": "tapete-mesa-rodondo.jpg"
+        "imagen": "tapete-mesa-rodondo.jpg",
+        "descripcion": "Esta es la descripcion de lalalalallalala"
     }
 ]

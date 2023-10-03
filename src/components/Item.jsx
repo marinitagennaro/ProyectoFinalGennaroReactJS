@@ -3,8 +3,6 @@ import './Item.css';
 
 export default function Item({ producto }) {
     
-    //precio final = precio - descuento
-
     const precioFinal = producto.precio - producto.descuento
 
     return (

@@ -1,10 +1,8 @@
-import React, {useState} from "react";
+import React, {useContext, useState} from "react";
 import "./Navbar.css"
 import Carrito from "./CartWidget"
 import Logo from "./logoPrincipal";
 import { Link, NavLink } from "react-router-dom";
-//import carrito from "../assets/carrito/cartW.svg"
-//import App from "../App";
 
 const NavBar = () => {
     const  [isOpen, setIsOpen] = useState(false)
@@ -16,14 +14,13 @@ const NavBar = () => {
                 <NavLink to="/categoria/Prendas">Prendas para vestir</NavLink>
                 <NavLink to="/categoria/Almohadones">Almohadones</NavLink>
                 <NavLink to="/categoria/Caminos">Caminos</NavLink>
-                <Carrito/>
+                    <Carrito/>
             </div>
             <div className={`nav_toogle ${isOpen && "open"}`} onClick={ () => setIsOpen(!isOpen)}>
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-
         </div>
     )
 }

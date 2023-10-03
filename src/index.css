@@ -26,3 +26,9 @@ button{
   cursor: pointer;
   transition: border-color 0.25s;
 }
+.hearts {
+  margin-left: 40%;
+  margin-right: 35%;
+  margin-top: 10%;
+  display: flex;
+}
