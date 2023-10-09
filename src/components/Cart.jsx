@@ -5,8 +5,7 @@ import CartItem from './CartItem';
 import './ItemListContainer.css';
 
 const Cart = () => {
-    const { removeItem, total } = useState()
-    const { cart } = useContext(CartContext)
+    const { cart, clearCart, total, totalQuantity } = useContext(CartContext)
 
 return (
     <div>
@@ -23,6 +22,10 @@ return (
                             <CartItem key={item.id} item={item}/>
                         ))
                     }
+                        <button onClick={() => clearCart()}>Eliminar todos los productos</button>
+                        <p>Cantidad de productos: {totalQuantity}</p>
+                        <p> El total de la compra es de: $ {total}</p>
+                        <Link className="boton-finalizar-compra" to={"/checkout"}>Finalizar compra</Link>
                 </div>
         }
     </div>
