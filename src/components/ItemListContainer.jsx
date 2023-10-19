@@ -30,7 +30,6 @@ export default function ItemListContainer({ greeting, children }) {
         <div className= "item-list-container" style={
             isDarkMode ? {backgroundColor:"rgb(58, 55, 55)"} : {backgroundColor:"whitesmoke"} 
         }>
-            {children}
                 <h1>{greeting}</h1>
                 <ItemList productos={productos}/>
         </div>

@@ -7,7 +7,14 @@ export function CartProvider({ children }) {
     const [cart, setCart] = useState([])
     
     const addItem = (item, quantity) => {
-        setCart([ ...cart, { ...item, quantity }]);
+        if(!isInCart(item.id)) {
+            setCart([ ...cart, { ...item, quantity }]);
+        }else{
+            const carritoFiltrado = cart.filter(e => e.id !== item.id)
+            const itemInCart = cart.find(e => e.id === item.id) 
+            itemInCart.quantity = itemInCart.quantity + quantity
+            setCart([...carritoFiltrado, itemInCart])
+        }  
     }
 
     const removeItem = (itemId) => {
@@ -19,7 +26,7 @@ export function CartProvider({ children }) {
         setCart([])
     }
 
-    const inInCart = (itemId) => {
+    const isInCart = (itemId) => {
         return cart.some(producto => producto.id === itemId)
     }
 

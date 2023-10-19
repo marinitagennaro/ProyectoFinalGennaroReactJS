@@ -36,11 +36,11 @@ export default function Checkout() {
     return (
         <form onSubmit={(e) => e.preventDefault()} style={{display:"flex", flexDirection: "column", gap:"30px", margin: "100px"}}>
             <label>Nombre y Apellido</label>
-            <input type="text" value={nombre} onChange={(event) => setNombre(event.target.value)} />
+            <input type="text" required value={nombre} onChange={(event) => setNombre(event.target.value)} />
             <label>Email</label>
-            <input type="email" value={email} onChange={(event) => setEmail(event.target.value)} />
+            <input type="email" id= "email" pattern="@,.com" required value={email} onChange={(event) => setEmail(event.target.value)} />
             <label>Telefono</label>
-            <input type="number" value={telefono} onChange={(event) => setTelefono(event.target.value)} />
+            <input type="number" required value={telefono} onChange={(event) => setTelefono(event.target.value)} />
             <button onClick={crearOrden}>Finalizar compraa</button>
         </form>
     )

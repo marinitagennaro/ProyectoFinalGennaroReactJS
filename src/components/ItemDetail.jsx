@@ -7,7 +7,6 @@ import Swal from "sweetalert2";
 
 export default function ItemDetail({ producto }) {
     const [quantity, setQuantity] = useState(0)
-    const [isBuyed, setIsBuyed] = useState(false)
 
     const { addItem } = useContext(CartContext)
 
@@ -24,7 +23,7 @@ export default function ItemDetail({ producto }) {
             popup: 'animate__animated animate__fadeOutUp'
             }
         })
-        setIsBuyed(true)
+        setQuantity(true)
     }
 
     return (
@@ -35,7 +34,7 @@ export default function ItemDetail({ producto }) {
             <p>{producto.categoria}</p>
             <span>$ {producto.precio}</span>
             {
-                !isBuyed ? (
+                quantity === 0  ? (
                     <ItemCount stock={producto.stock} onAdd={handleOnAdd}/>
                 ) : (
                     <Link className="boton-finalizar-compra" to={"/cart"}>Finalizar compra</Link>

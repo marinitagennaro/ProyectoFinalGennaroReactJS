@@ -28,7 +28,12 @@ if(!producto) return (<div className="hearts"><Hearts height="180" width="180" c
             {
                 producto ? (
                     <ItemDetail producto={producto} />
-                ) : (Hearts)               
+                ) : (Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Algo anda mal!',
+                    footer: <Link to={"/"}>Queres volver al inicio?</Link>
+                }))               
             }
         </div>
     );

@@ -15,10 +15,12 @@
 }
 
 .item-detail:hover {
-    transform: translateY(-15px);
+    /* transform: translateY(-15px); */
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
-
+.item-detail-descripcion:hover {
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
 .item-detail-descripcion {
     flex-direction: row;
     width: 330px;
